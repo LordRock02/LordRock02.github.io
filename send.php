@@ -2,7 +2,7 @@
 $nombre = $_POST['name'];
 $mail = $_POST['email'];
 $empresa = $_POST['message'];
-$subject = $_POST['subject']
+$subject = $_POST['subject'];
 
 $header = 'From: ' . $mail . " \r\n";
 $header .= "X-Mailer: PHP/" . phpversion() . " \r\n";
