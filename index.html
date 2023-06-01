@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>test</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="/style.css">
+    <script src="https://kit.fontawesome.com/54f3cb5570.js" crossorigin="anonymous"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  </head>
+<body data-bs-spy="scroll" data-bs-target=".navbar">
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top ">
+        <div class="container flex-lg-column">
+          <a class="navbar-brand mb-lg-4 " href="#">
+            <span class="h3 fw-bold d-block d-lg-none">LordRock</span>
+            <img src="./images/Logo.png" class="d-none d-lg-block rounded-circle" alt="">
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto flex-lg-column text-lg-center">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#home">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#about">about me</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#contact">contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+    </nav> 
+    <!--Content wrapper-->
+    <div id="content-wrapper">
+        <section id="home" class="full-height px-lg-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8">
+                        <h1 class="display-4 fw-bold" data-aos="fade-up">Hi I'm <span class="text-brand">Roger ;)</span></h1>
+                        <p class="lead mt-2 mb-4" data-aos="fade-up" data-aos-delay="300">I am a software egineer student from colombia, and I can be your software developer </p>
+                        <div data-aos="fade-up" data-aos-delay="600"><a href="#work" class="btn btn-brand me-4" data-aos="fade-up" data-aos-delay="400">learn more</a>
+                          <a href="https://api.whatsapp.com/send?phone=573227930616" class="link-custom" data-aos="fade-up"> call: +57 3227930616 →</a></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- services-->
+        <section id="about" class="full-height px-lg-5">
+          <div class="container">
+            <div class="row pb-4">
+              <div class="col-lg-8" data-aos="fade-up">
+                <h6 class="text-brand">ABOUT ME</h6>
+                <h1>Knowledge that i have acquired throughout my carrer</h1>
+              </div>
+              <div class="row" data-aos="fade-up" data-aos-delay="600">
+                <div class="col-md-4">
+                  <div class="about p-4 bg-base rounded-5 shadow-effect">
+                    <div class="iconbox rounded-4">
+                      <i class="fa-solid fa-code"></i>
+                    </div>
+                    <h4>Back-end</h4>
+                    <p>Experience in back-end</p>
+                    <a href="#" class="link-custom">Learn More</a>
+                    
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="about p-4 bg-base rounded-5 shadow-effect">
+                    <div class="iconbox rounded-4">
+                      <i class="fa-solid fa-cube"></i>
+                    </div>
+                    <h4>Web Design</h4>
+                    <p>Experience in web design</p>
+                    <a href="#" class="link-custom">Learn More</a>
+                    
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="about p-4 bg-base rounded-5 shadow-effect">
+                    <div class="iconbox rounded-4">
+                      <i class="fa-solid fa-database"></i>
+                    </div>
+                    <h4>Data Bases</h4>
+                    <p>Experience in data bases</p>
+                    <a href="#" class="link-custom">Learn More</a>
+                    
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-8 pt-4" data-aos="fade-up">
+                <div >
+                  <h6 class="text-brand">MY EDUCATION</h6>
+                  <div class="about p-4 bg-base rounded-5 shadow-effect" data-aos="fade-up" data-aos-delay="600">
+                    <div class="iconbox rounded-4">
+                      <i class="fa-solid fa-school"></i>
+                    </div>
+                    <h1>Software Engineer</h1>
+                    <h4 class="text-brand">Universidad Distrital Francisco Jóse de Caldal (2020-present)</h4>
+                    <p>studying 6th semester</p>
+                    <a href="#" class="link-custom">Learn More</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section id="contact" class="full-height px-lg-5">
+          <div class="container">
+            <div class="row justify-content-center text-center" data-aos="fade-up">
+              <div class="col-lg-8 pb-4">
+                <h6 class="text-brand">CONTACT</h6>
+                <h1>Want to contact me?</h1>
+              </div>
+              <form action="send.php" method="POST" name="contact-form" class="row g-lg-3 gy-3">
+                <div class="form-group col-md-6">
+                  <input type="text" name="name" class="form-control" placeholder="NAME">
+                </div>
+                <div class="form-group col-md-6">
+                  <input type="email" name="email" class="form-control" placeholder="E-MAIL">
+                </div>
+                <div class="form-group col-md-12">
+                  <input type="text" name="message" class="form-control" placeholder="SUBJECT">
+                </div>
+                <div class="form-group col-md-15">
+                  <textarea name="" rows="4" class="form-control" placeholder="ENTER YOUR MESSAGE"></textarea>
+                </div>
+                <div class="form-group col-12 d-grid" >
+                  <button type="submit" class="btn btn-brand">Contact me</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </section>
+    </div>
+  <footer class="py-5 px-lg-5">
+    <div class="container">
+      <div class="row gy-4 justify-content-between">
+        <div class="col-auto">
+          <p class="mb-0 ms-240px">Coyright</p>
+        </div>
+        <div class="col-auto">
+          <div class="social-links">
+            <a href="https://www.instagram.com/rogergt02/"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://api.whatsapp.com/send?phone=573227930616"><i class="fa-brands fa-whatsapp"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
+</html>
